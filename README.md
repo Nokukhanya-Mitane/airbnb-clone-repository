@@ -69,3 +69,86 @@ This project uses a range of modern technologies to build and manage the backend
 | **Unittest**   | Python’s built-in testing framework used to write and run test cases to ensure code quality. |
 
 
+## 🗃️ Database Design
+
+The database for the AirBnB Clone project is designed to manage users, properties, bookings, reviews, and payments efficiently. Below is an overview of the key entities and their fields, along with the relationships between them.
+
+# 🧑‍💼 1. Users
+
+Represents users of the platform including hosts and guests.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `name`
+- `email`
+- `password_hash`
+- `user_type` (host or guest)
+
+---
+
+# 🏠 2. Properties
+
+Represents the listings or accommodations available for booking.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+
+---
+
+# 📅 3. Bookings
+
+Captures booking details made by guests for a property.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `check_in_date`
+- `check_out_date`
+- `total_price`
+
+---
+
+# 🌟 4. Reviews
+
+Allows users to leave feedback on properties.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key → Users)
+- `property_id` (Foreign Key → Properties)
+- `rating` (1–5)
+- `comment`
+
+---
+
+# 💳 5. Payments
+
+Tracks transactions for bookings.
+
+**Key Fields:**
+- `id` (Primary Key)
+- `booking_id` (Foreign Key → Bookings)
+- `amount`
+- `payment_method`
+- `payment_status`
+
+---
+
+# 🔁 Entity Relationships
+
+- **One-to-Many:** A **User** can have multiple **Properties**
+- **One-to-Many:** A **User** can make multiple **Bookings**
+- **One-to-Many:** A **Property** can have multiple **Bookings**
+- **One-to-Many:** A **Property** can have multiple **Reviews**
+- **One-to-One:** A **Booking** has one **Payment**
+
+> This relational structure ensures clean data separation and scalability as more features are added to the project.
+
+
+
