@@ -35,3 +35,15 @@ The AirBnB Clone project involves multiple roles, each with specific responsibil
   Collects technical information, writes documentation, and maintains project knowledge to help the team stay aligned and informed.
 
 > *Note: Roles may overlap or evolve based on project phases and team size.*
+
+## 🧰 Technology Stack This project uses a range of modern technologies to build and manage the backend functionality of the AirBnB Clone. Below is an overview of the key technologies and their roles in the project:
+| Technology | Purpose | |----------------|-------------------------------------------------------------------------|
+| **Python** | The core programming language used for writing all backend logic and modules. | 
+| **Flask** | A lightweight Python web framework used to create RESTful APIs and manage server-side routing (used in later phases). |
+| **MySQL** | A relational database system used for storing persistent data such as users, places, and bookings. | 
+| **SQLAlchemy** | An Object Relational Mapper (ORM) that helps interact with the MySQL database using Python objects instead of SQL queries. |
+| **HTML/CSS** | (Frontend - Later Phase) Used to structure and style the web interface of the application. | 
+| **JavaScript** | (Frontend - Later Phase) Adds interactivity to the UI and communicates with backend APIs. |
+| **Git** | Version control tool used to track changes, manage branches, and collaborate as a team. |
+| **GitHub** | Remote repository hosting platform for code collaboration and project documentation. | 
+| **Unittest** | Python’s built-in testing framework used to write and run test cases to ensure code quality. |
