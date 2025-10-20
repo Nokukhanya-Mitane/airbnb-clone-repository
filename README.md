@@ -88,3 +88,30 @@ The AirBnB Clone project consists of several core features that replicate key fu
 
 - **Search and Filtering** (Planned)  
   Provides users with the ability to search properties by location, price range, and availability. Advanced filters like amenities and ratings will enhance search accuracy and user convenience.
+
+  Securing the backend APIs of the AirBnB Clone is essential to protect sensitive data, prevent unauthorized access, and ensure a safe experience for users. The following security measures will be implemented throughout the project:
+
+- **Authentication**  
+  Verifies the identity of users through secure login mechanisms (e.g., email and password with hashed storage). Authentication ensures that only registered users can access protected endpoints and prevents impersonation.
+
+- **Authorization**  
+  Determines what actions a user is allowed to perform based on their role (e.g., guest, host, admin). This prevents users from accessing or modifying data that does not belong to them (e.g., a guest trying to edit a host's property).
+
+- **Input Validation and Sanitization**  
+  Ensures that all incoming data is properly validated and cleaned before being processed. This helps prevent common vulnerabilities such as SQL injection, XSS (Cross-Site Scripting), and data corruption.
+
+- **Rate Limiting**  
+  Limits the number of API requests a user or IP address can make within a certain time frame. This protects the system from brute force attacks, abuse, and denial-of-service (DoS) threats.
+
+- **Data Encryption**  
+  Sensitive data such as passwords and payment information will be encrypted in transit (via HTTPS) and at rest where applicable. This prevents data leakage during network transmission or server compromise.
+
+- **Token-Based Access (e.g., JWT)**  
+  Secure tokens will be used to manage authenticated sessions. This allows stateless authentication and ensures that user sessions are securely managed across multiple API requests.
+
+### Why Security is Crucial
+
+- **Protecting User Data:** User information, including personal details and passwords, must be secured to maintain trust and comply with data protection standards.
+- **Securing Payments:** Payment data and transaction records are highly sensitive and must be handled securely to prevent fraud or theft.
+- **Preventing Unauthorized Access:** Ensures that users can only access the data and features that they are permitted to, reducing the risk of data leaks or manipulation.
+- **Ensuring Platform Integrity:** Security safeguards help keep the platform stable, reliable, and free from abuse or malicious activity.
