@@ -9,3 +9,29 @@
 bash
 git clone https://github.com/YOUR-USERNAME/airbnb-clone-project.git
 
+## Team Roles
+
+The AirBnB Clone project involves multiple roles, each with specific responsibilities to ensure smooth development and delivery:
+
+- **Backend Developer**  
+  Designs and implements the server-side logic, APIs, and core application functionality. Responsible for data processing and business rules.
+
+- **Database Administrator (DBA)**  
+  Manages database design, optimization, data integrity, and migrations. Ensures efficient and secure data storage and retrieval.
+
+- **QA Engineer**  
+  Creates and executes test plans to ensure software quality. Responsible for identifying bugs and verifying fixes through automated and manual testing.
+
+- **DevOps Engineer**  
+  Automates deployment processes, manages CI/CD pipelines, and maintains the infrastructure for reliable application delivery.
+
+- **Frontend Developer**  
+  Develops the client-side interface using HTML, CSS, and JavaScript. Connects UI elements with backend APIs to create interactive user experiences.
+
+- **Project Manager**  
+  Coordinates project tasks, manages timelines, facilitates communication among team members, and ensures project goals are met.
+
+- **Research & Documentation Lead**  
+  Collects technical information, writes documentation, and maintains project knowledge to help the team stay aligned and informed.
+
+> *Note: Roles may overlap or evolve based on project phases and team size.*
