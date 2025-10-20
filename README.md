@@ -61,3 +61,30 @@ The database for the AirBnB Clone project is designed to manage users, propertie
 ---
 # 💳 5. Payments Tracks transactions for bookings. **Key Fields:** - `id` (Primary Key) - `booking_id` (Foreign Key → Bookings) - `amount` - `payment_method` - `payment_status` 
 ---
+
+# 🔁 Entity Relationships 
+- **One-to-Many:** A **User** can have multiple **Properties**
+- **One-to-Many:** A **User** can make multiple **Bookings**
+- **One-to-Many:** A **Property** can have multiple **Bookings**
+- **One-to-Many:** A **Property** can have multiple **Reviews**
+- **One-to-One:** A **Booking** has one **Payment** > This relational structure ensures clean data separation and scalability as more features are added to the project.
+
+The AirBnB Clone project consists of several core features that replicate key functionalities of the real AirBnB platform:
+
+- **User Management**  
+  Handles user registration, authentication, and profile management. Users can sign up as guests or hosts, log in securely, and manage their personal information and bookings.
+
+- **Property Management**  
+  Allows hosts to create, update, and delete property listings. Each listing includes details such as title, location, description, images, and pricing, enabling hosts to manage their accommodations.
+
+- **Booking System**  
+  Enables guests to search for available properties, select dates, and make bookings. It includes validation to prevent double bookings and calculates the total price based on the length of stay.
+
+- **Payment Integration**  
+  Simulates or integrates payment processing to handle transactions securely. Tracks payment status to ensure confirmation before finalizing bookings.
+
+- **Reviews & Ratings**  
+  Allows guests to leave feedback and ratings for properties after their stay. This feature helps build trust and improves the overall user experience by providing valuable insights.
+
+- **Search and Filtering** (Planned)  
+  Provides users with the ability to search properties by location, price range, and availability. Advanced filters like amenities and ratings will enhance search accuracy and user convenience.
